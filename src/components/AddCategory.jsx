@@ -20,7 +20,12 @@ const AddCategory = ({onAddCategory}) => {
     }
 
 
-  return (< >
+  return (
+  <form onSubmit={(e)=>{
+    e.preventDefault()
+    onSubmit()
+  }}>
+    
    <input type="text" 
     value={inputValue} 
     onChange={onInputChange}
@@ -30,9 +35,9 @@ const AddCategory = ({onAddCategory}) => {
    
 
     <div>
-    <button onClick={onSubmit}>  Agregar</button>
+    {/* <button onClick={onSubmit}>  Agregar</button> */}
     </div>
-  </> 
+    </form>
   
   )
 }

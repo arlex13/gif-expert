@@ -13,16 +13,8 @@ const App = () => {
 
   return (
    <>
-   
-   <h2>Categorias</h2>
-   <AddCategory onAddCategory={onAddCategory}/>
-
-
-
-
-
-
-
+    <h2>Categorias</h2>
+    <AddCategory onAddCategory={onAddCategory}/>
 
     <h2>Listado de categorias</h2>
     {categories.map((category, index)=>{
